@@ -789,6 +789,7 @@ vendor/lib64/libpdnotifier.so
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
+vendor/lib64/libspcom.so
 
 # QCRIL
 vendor/bin/hw/qcrild
