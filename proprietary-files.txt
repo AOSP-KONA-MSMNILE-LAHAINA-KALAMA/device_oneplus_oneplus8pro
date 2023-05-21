@@ -607,11 +607,6 @@ odm/lib64/vendor.oplus.hardware.osense.client@1.0.so|796b6f263f0d5b494b0bbabbb70
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so|267a377051d25f555c8f30b748bcbe1cf7f005fd
 -odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml|78ca4f56ed1f5dd48c186718718fd9513629851e
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-
 # Graphics (Adreno firmware) - OOS
 vendor/firmware/a650_gmu.bin|c744acb10afb7c980d333c5b6521e2a18993ff14
 vendor/firmware/a650_sqe.fw|130a0df5c562e69ab717867ebc0b7abf6f3bcb3f
