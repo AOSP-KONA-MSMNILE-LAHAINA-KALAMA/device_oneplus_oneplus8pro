@@ -87,6 +87,10 @@ PRODUCT_COPY_FILES += \
 # Display
 TARGET_USES_FOD_ZPOS := true
 
+# Dolby Manager
+PRODUCT_PACKAGES += \
+    DolbyManager
+
 # Doze
 PRODUCT_PACKAGES += \
     ParanoidDoze
