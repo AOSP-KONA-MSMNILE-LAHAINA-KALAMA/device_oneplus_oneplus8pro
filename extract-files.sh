@@ -61,6 +61,9 @@ function blob_fixup() {
         odm/etc/init/wlchgmonitor.rc)
             sed -i "/disabled/d;/seclabel/d" "${2}"
             ;;
+        vendor/etc/sensors/hals.conf)
+            sed -i '$a sensors.oplus.so' "${2}"
+            ;;
         odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml)
             sed -ni "/android.hardware.biometrics.fingerprint/{x;s/hal format/hal override=\"true\" format/;x};x;1!p;\${x;p}" "${2}"
             ;;
