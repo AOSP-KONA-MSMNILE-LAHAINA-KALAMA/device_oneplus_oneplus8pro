@@ -1,4 +1,5 @@
 # Bluetooth
+bluetooth.device.default_name=OnePlus 8 Pro
 bluetooth.hardware.power.idle_cur_ma=6
 bluetooth.hardware.power.operating_voltage_mv=3700
 bluetooth.hardware.power.rx_cur_ma=28
@@ -64,6 +65,12 @@ persist.vendor.qcomsysd.enabled=1
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
+
+# USB
+vendor.usb.product_string=OnePlus 8 Pro
+
+# Verity
+ro.apk_verity.mode=2
 
 # Zygote
 zygote.critical_window.minute=10

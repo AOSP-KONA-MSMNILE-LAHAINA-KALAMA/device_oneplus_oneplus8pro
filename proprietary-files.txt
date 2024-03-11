@@ -2,6 +2,16 @@
 ## from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0. Sections labeled with 'OOS' are
 ## on latest OxygenOS which is OnePlus 8 Pro (IN2025_11_F.13) at present.
 
+# ACDB
+odm/etc/acdbdata/Audio_Parameter_Version.txt
+odm/etc/acdbdata/Bluetooth_cal.acdb
+odm/etc/acdbdata/General_cal.acdb
+odm/etc/acdbdata/Global_cal.acdb
+odm/etc/acdbdata/Handset_cal.acdb
+odm/etc/acdbdata/Hdmi_cal.acdb
+odm/etc/acdbdata/Headset_cal.acdb
+odm/etc/acdbdata/Speaker_cal.acdb
+
 # ADSPRPC - OOS
 vendor/etc/init/vendor.qti.adsprpc-service.rc|20cb0e4f182f64c51c214104487ae4836f04b86e
 
@@ -158,6 +168,9 @@ vendor/lib64/soundfx/libqcreverb.so|6365400f47e7a1f56f902884993963acd567bbdf
 vendor/lib64/soundfx/libqcvirt.so|e2cd59853b16a7d11739472085b07e90771a6dbe
 vendor/lib64/soundfx/libshoebox.so|4d9e1a704decf7bcafe3c8b61875d33634c01241
 vendor/lib64/vendor.qti.voiceprint@1.0.so|11c3fe046553af2dbe8c3f37ea666d308870b304
+
+# Audio firmware
+odm/firmware/tfa98xx.cnt
 
 # Bluetooth - OOS LE2101_11_F.16
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|b0f73b4ac1a88607ec90b514b9602de423bb9be6
@@ -342,8 +355,46 @@ vendor/lib64/libtriplecam_video_optical_zoom.so|416f5f2e752f979ab967414a541ebe03
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so|7f139026aff1887a9b9a72d7c1a7b10ba6aace3e
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|7dc3f932216311875fb598c31cd94837c50cf32e|07034348534c394184ff3ae5809be0e7f222e165
 
+# Camera
+odm/etc/camera/ashdr/ncf_pack.ncf
+odm/etc/camera/ashdr/ncf_pack_imx471.ncf
+odm/etc/camera/ashdr/ncf_pack_imx586.ncf
+odm/etc/camera/ashdr/ncf_pack_imx689.ncf
+odm/etc/camera/ashdr/ncf_pack_s5k3m5.ncf
+odm/etc/camera/darksight/darksight_main.bin
+odm/etc/camera/darksight/darksight_ultrawide.bin
+odm/etc/camera/calibrationOutput_IR.bin
+odm/etc/camera/calibrationOutput_uw.bin
+odm/etc/camera/calibrationOutput_wt.bin
+odm/etc/camera/distortion_result.bin
+odm/etc/init/calibrationOutput_IR.rc
+odm/etc/init/calibrationOutput_uw.rc
+odm/etc/init/calibrationOutput_wt.rc
+odm/lib64/camera/com.qti.sensormodule.semco_imx586.bin
+odm/lib64/camera/com.qti.sensormodule.semco_imx586_BG.bin
+odm/lib64/camera/com.qti.sensormodule.semco_imx689.bin
+odm/lib64/camera/com.qti.sensormodule.semco_imx689_MP.bin
+odm/lib64/camera/com.qti.sensormodule.semco_s5k3m5.bin
+odm/lib64/camera/com.qti.sensormodule.shine_gc5035.bin
+odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin
+odm/lib64/camera/com.qti.tuned.semco_imx586.bin
+odm/lib64/camera/com.qti.tuned.semco_imx586_BG.bin
+odm/lib64/camera/com.qti.tuned.semco_imx689.bin
+odm/lib64/camera/com.qti.tuned.semco_s5k3m5.bin
+odm/lib64/camera/com.qti.tuned.shine_gc5035.bin
+odm/lib64/camera/com.qti.tuned.truly_imx471.bin
+odm/lib64/camera/com.qti_instantnoodlep.sensor.gc5035.so
+odm/lib64/camera/com.qti_instantnoodlep.sensor.imx471.so
+odm/lib64/camera/com.qti_instantnoodlep.sensor.imx586.so
+odm/lib64/camera/com.qti_instantnoodlep.sensor.imx689.so
+odm/lib64/camera/com.qti_instantnoodlep.sensor.s5k3m5.so
+
 # Camera firmware - OOS
 vendor/firmware/CAMERA_ICP.elf|9a060a175570cd9c7d4b9d7c0605aa212e937b68
+
+# Charger
+odm/bin/wlchgmonitor
+odm/etc/init/wlchgmonitor.rc
 
 # Charger firmware - OOS
 odm/firmware/fastchg/19063/oplus_vooc_fw.bin|a4cc63086f1ffd4385e8ff03d37497bc3c4d8119
@@ -597,6 +648,24 @@ odm/lib64/libosensehalclient.so|f6e8c571abecc4f90e6cfb437952e1ce404705cb
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so|64eeee3fc357cdbfb42a41e169983992e55d93da
 odm/lib64/vendor.oplus.hardware.orms@1.0.so|faff993f8153eaf55223f49e5e2ad378f4e96013
 odm/lib64/vendor.oplus.hardware.osense.client@1.0.so|7afe5ad5a5e1159a47415c0755e6c950752ed8ce
+odm/vendor/firmware/gfp9608.b00
+odm/vendor/firmware/gfp9608.b01
+odm/vendor/firmware/gfp9608.b02
+odm/vendor/firmware/gfp9608.b03
+odm/vendor/firmware/gfp9608.b04
+odm/vendor/firmware/gfp9608.b05
+odm/vendor/firmware/gfp9608.b06
+odm/vendor/firmware/gfp9608.b07
+odm/vendor/firmware/gfp9608.mdt
+odm/vendor/firmware/gfp9638.b00
+odm/vendor/firmware/gfp9638.b01
+odm/vendor/firmware/gfp9638.b02
+odm/vendor/firmware/gfp9638.b03
+odm/vendor/firmware/gfp9638.b04
+odm/vendor/firmware/gfp9638.b05
+odm/vendor/firmware/gfp9638.b06
+odm/vendor/firmware/gfp9638.b07
+odm/vendor/firmware/gfp9638.mdt
 
 # Graphics (Adreno firmware) - OOS
 vendor/firmware/a650_gmu.bin|c744acb10afb7c980d333c5b6521e2a18993ff14
@@ -672,6 +741,49 @@ vendor/firmware/ipa_uc.b01|dc5193546971fe10924fdf97f4eb1bdbb215b28a
 vendor/firmware/ipa_uc.b02|50d1bdacebc3bd34c501fd833cd518deff1709a3
 vendor/firmware/ipa_uc.elf|59abce08e72b19a52d9653ce229e918eaaab4125
 vendor/firmware/ipa_uc.mdt|329005b1dd8a0414098ef58a2c8c619a4a13f0f0
+
+# IRIS
+odm/etc/inparm/iris5/inParm1.txt
+odm/etc/inparm/iris5/inParm10.txt
+odm/etc/inparm/iris5/inParm11.txt
+odm/etc/inparm/iris5/inParm12.txt
+odm/etc/inparm/iris5/inParm13.txt
+odm/etc/inparm/iris5/inParm14.txt
+odm/etc/inparm/iris5/inParm15.txt
+odm/etc/inparm/iris5/inParm16.txt
+odm/etc/inparm/iris5/inParm17.txt
+odm/etc/inparm/iris5/inParm18.txt
+odm/etc/inparm/iris5/inParm2.txt
+odm/etc/inparm/iris5/inParm3.txt
+odm/etc/inparm/iris5/inParm4.txt
+odm/etc/inparm/iris5/inParm5.txt
+odm/etc/inparm/iris5/inParm6.txt
+odm/etc/inparm/iris5/inParm7.txt
+odm/etc/inparm/iris5/inParm8.txt
+odm/etc/inparm/iris5/inParm9.txt
+odm/etc/inparm/irissoft/inParm1.txt
+odm/etc/inparm/irissoft/inParm10.txt
+odm/etc/inparm/irissoft/inParm11.txt
+odm/etc/inparm/irissoft/inParm12.txt
+odm/etc/inparm/irissoft/inParm13.txt
+odm/etc/inparm/irissoft/inParm14.txt
+odm/etc/inparm/irissoft/inParm15.txt
+odm/etc/inparm/irissoft/inParm16.txt
+odm/etc/inparm/irissoft/inParm17.txt
+odm/etc/inparm/irissoft/inParm18.txt
+odm/etc/inparm/irissoft/inParm2.txt
+odm/etc/inparm/irissoft/inParm3.txt
+odm/etc/inparm/irissoft/inParm4.txt
+odm/etc/inparm/irissoft/inParm5.txt
+odm/etc/inparm/irissoft/inParm6.txt
+odm/etc/inparm/irissoft/inParm7.txt
+odm/etc/inparm/irissoft/inParm8.txt
+odm/etc/inparm/irissoft/inParm9.txt
+odm/etc/inparm/irissoft/mcfCheck.txt
+odm/etc/irissoft.fw
+odm/vendor/firmware/iris5.fw
+odm/vendor/firmware/iris5_ccf1.fw
+odm/vendor/firmware/iris5_ccf2.fw
 
 # MDM
 vendor/bin/init.mdm.sh
@@ -1014,6 +1126,22 @@ vendor/lib64/libssc.so|92c5323689885f4f3c2e40741ffaec3da3c716ee
 vendor/lib64/libssc_default_listener.so|1653233f7454f3be9e8361ab5fde7cd45e9ac9b4
 vendor/lib64/sensors.ssc.so|c52baa36b0257f05660225d5597b75892fdd1c7b|bb086be8bca993edab9309c3e081cf9494200c4b
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|28b4fa4f00eb5b5d4d46fd09e8a2b31bcfff9a76
+odm/etc/sensor/config/kona_T0_tcs3408.json
+odm/etc/sensor/config/kona_qrd_ak991x_0.json
+odm/etc/sensor/config/kona_qrd_bmi26x_0.json
+odm/etc/sensor/config/kona_qrd_cct.json
+odm/etc/sensor/config/kona_qrd_cct_rear.json
+odm/etc/sensor/config/kona_qrd_icm4x6xx.json
+odm/etc/sensor/config/kona_qrd_lsm6dsm_0.json
+odm/etc/sensor/config/kona_qrd_lsm6dso.json
+odm/etc/sensor/config/kona_qrd_mmc5603x_0.json
+odm/etc/sensor/config/kona_qrd_stk2232_0.json
+odm/etc/sensor/config/kona_qrd_sx9324_0.json
+odm/etc/sensor/config/kona_qrd_sx9324up_0.json
+odm/etc/sensor/config/kona_qrd_sx933x_0.json
+odm/etc/sensor/config/kona_qrd_tcs3408.json
+odm/etc/sensor/config/kona_qrd_tcs3707.json
+odm/etc/sensor/config/kona_stk3a6x_0.json
 
 # SMC Invoke
 vendor/etc/ssg/ta_config.json
@@ -2085,6 +2213,7 @@ odm/lib64/liboemcrypto.so|5876fe1812e630de5417d3f028b43c02139c32ad
 odm/lib64/libwvhidl.so|47d7bd45bee04d43e3679a552558abc848e5594c
 odm/lib64/mediadrm/libwvdrmengine.so|0f3d969c316841306b4e97bc9ae5d449b11d803c
 vendor/lib64/libtrustedapploader.so|030366cf9b29f9beacea371f1c2a8781664be851
+odm/etc/wifi/bdwlan.elf
 
 # WiFi
 vendor/bin/cnss-daemon
