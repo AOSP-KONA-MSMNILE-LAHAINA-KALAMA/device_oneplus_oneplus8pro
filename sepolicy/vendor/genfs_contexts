@@ -1,0 +1,2 @@
+# Wireless Charging (Reverse)
+genfscon sysfs /devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/oplus_chg/wireless/trx_online  u:object_r:sysfs_powershare:s0

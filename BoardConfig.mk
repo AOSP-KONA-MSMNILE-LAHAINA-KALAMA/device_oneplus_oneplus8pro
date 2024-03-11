@@ -129,6 +129,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Power
 TARGET_POWER_FEATURE_EXT_LIB := //$(DEVICE_PATH):libpowerfeature_ext_oplus
 
+# PowerShare
+TARGET_POWERSHARE_NODE := /sys/class/oplus_chg/wireless/trx_online
+
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
@@ -143,6 +146,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
+
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

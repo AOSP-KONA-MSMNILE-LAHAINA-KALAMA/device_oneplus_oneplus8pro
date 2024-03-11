@@ -162,7 +162,7 @@ PRODUCT_PACKAGES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.oplus
+    vendor.aospa.powershare-service
 
 # QTI
 TARGET_BOARD_PLATFORM := kona
