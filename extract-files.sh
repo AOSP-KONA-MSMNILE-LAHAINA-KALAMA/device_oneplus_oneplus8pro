@@ -64,6 +64,9 @@ function blob_fixup() {
         vendor/etc/sensors/hals.conf)
             sed -i '$a sensors.oplus.so' "${2}"
             ;;
+        odm/etc/gps.conf | vendor/etc/gps.conf)
+            sed -i "s/PROXY_APP_PACKAGE_NAME = com.oplus.locationproxy/PROXY_APP_PACKAGE_NAME = com.google.android.carrierlocation/" "${2}"
+            ;;
         odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml)
             sed -ni "/android.hardware.biometrics.fingerprint/{x;s/hal format/hal override=\"true\" format/;x};x;1!p;\${x;p}" "${2}"
             ;;
