@@ -1121,7 +1121,7 @@ odm/lib64/android.hardware.secure_element@1.0-impl.so
 odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/bin/oplus_sensor_fb
 odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc
-odm/etc/sensor/config/kona_T0_tcs3408.json
+odm/etc/sensor/config/kona_bu52053nvx_0.json
 odm/etc/sensor/config/kona_qrd_ak991x_0.json
 odm/etc/sensor/config/kona_qrd_bmi26x_0.json
 odm/etc/sensor/config/kona_qrd_cct.json
@@ -1131,12 +1131,13 @@ odm/etc/sensor/config/kona_qrd_lsm6dsm_0.json
 odm/etc/sensor/config/kona_qrd_lsm6dso.json
 odm/etc/sensor/config/kona_qrd_mmc5603x_0.json
 odm/etc/sensor/config/kona_qrd_stk2232_0.json
-odm/etc/sensor/config/kona_qrd_sx9324_0.json
-odm/etc/sensor/config/kona_qrd_sx9324up_0.json
 odm/etc/sensor/config/kona_qrd_sx933x_0.json
 odm/etc/sensor/config/kona_qrd_tcs3408.json
 odm/etc/sensor/config/kona_qrd_tcs3707.json
 odm/etc/sensor/config/kona_stk3a6x_0.json
+odm/etc/sensor/config/kona_sx9324_0.json
+odm/etc/sensor/config/kona_sx9324up_0.json
+odm/etc/sensor/config/kona_T0_tcs3408.json
 odm/etc/vintf/manifest/manifest_oplusSensor.xml
 odm/lib64/liboplus_service.so
 odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so
