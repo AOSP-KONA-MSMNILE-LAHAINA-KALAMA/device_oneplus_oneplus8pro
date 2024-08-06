@@ -10,14 +10,14 @@ odm/etc/acdbdata/Hdmi_cal.acdb
 odm/etc/acdbdata/Headset_cal.acdb
 odm/etc/acdbdata/Speaker_cal.acdb
 
-# ADSPRPC - OOS
+# ADSPRPC
 vendor/etc/init/vendor.qti.adsprpc-service.rc
 
 # ADSPRPC
 vendor/bin/loadalgo
 vendor/lib64/libloadalgo_stub.so
 
-# ADSP modules - OOS
+# ADSP modules
 odm/lib/rfsa/adsp/hta_lib/libhta_dsp_skel.so
 odm/lib/rfsa/adsp/libaiboost_skel.so
 odm/lib/rfsa/adsp/libaiboost_skel_v65.so
@@ -68,7 +68,7 @@ vendor/lib/rfsa/adsp/libvdsuperphoto_skel.so
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio - OOS
+# Audio
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib/soundfx/libasphere.so
@@ -170,13 +170,13 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 # Audio firmware
 odm/firmware/tfa98xx.cnt
 
-# Bluetooth - OOS
+# Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
 
-# Bluetooth (A2DP) - OOS
+# Bluetooth (A2DP)
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
@@ -201,7 +201,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Camera - OOS
+# Camera
 odm/bin/vl53l1_daemon_main
 odm/etc/camera/fb_default
 odm/etc/camera/fwk_config.json
@@ -388,14 +388,14 @@ odm/lib64/camera/com.qti_instantnoodlep.sensor.imx586.so
 odm/lib64/camera/com.qti_instantnoodlep.sensor.imx689.so
 odm/lib64/camera/com.qti_instantnoodlep.sensor.s5k3m5.so
 
-# Camera firmware - OOS
+# Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 
 # Charger
 odm/bin/wlchgmonitor
 odm/etc/init/wlchgmonitor.rc
 
-# Charger firmware - OOS
+# Charger firmware
 odm/firmware/fastchg/19063/oplus_vooc_fw.bin
 odm/firmware/fastchg/19065/oplus_vooc_fw.bin
 odm/firmware/fastchg/19066/oplus_vooc_fw.bin
@@ -516,7 +516,6 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Connection Security
-vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
@@ -557,7 +556,7 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
-# Display calibration data - OOS
+# Display calibration data
 vendor/etc/qdcm_calib_data_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml
 vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml
 vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml
@@ -599,11 +598,14 @@ vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml
 
+# Display Hardware
+vendor/lib64/libsdedrm.so
+vendor/lib64/libdisp-aba.so
+
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
 vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib64/libdisp-aba.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
@@ -675,7 +677,6 @@ odm/lib64/libolc_vnd.so
 odm/lib64/libosenseaidlhalclient.so
 odm/lib64/libosensehalclient.so
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
 odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
@@ -849,12 +850,18 @@ vendor/bin/mdm_helper
 vendor/bin/mdm_helper_proxy
 vendor/lib64/libmdmimgload.so
 
-# Media - OOS
+# Media
+odm/etc/media_codecs_c2.xml
+odm/etc/media_codecs_c2_oplus_audio.xml
+vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_kona.xml
 vendor/etc/media_codecs_kona_vendor.xml
 vendor/etc/media_codecs_performance_kona.xml
 vendor/etc/media_codecs_performance_kona_vendor.xml
 vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/media_profiles.xml
+vendor/etc/media_profiles_kona.xml
+vendor/etc/media_profiles_vendor.xml
 
 # MM OSAL
 vendor/lib/libmmosal.so
@@ -875,7 +882,7 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so
 
 # NFC - OOS
-odm/etc/nfc/libnfc-mtp-SN100.conf_19805:vendor/etc/libnfc-mtp-SN100.conf
+odm/etc/nfc/libnfc-mtp-SN100.conf_19805:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_19805:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_53:vendor/firmware/sn100u.bin
 
@@ -1060,14 +1067,14 @@ vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # SecureMSM (GPQESE)
-vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-vendor/bin/hw/vendor.qti.secure_element@1.2-service
-vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-vendor/lib64/android.hardware.secure_element@1.0-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.1.so
+odm/bin/hw/vendor.qti.esepowermanager@1.1-service
+odm/bin/hw/vendor.qti.secure_element@1.2-service
+odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc
+odm/etc/init/vendor.qti.secure_element@1.2-service.rc
+odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
+odm/lib64/android.hardware.secure_element@1.0-impl.so
+odm/lib64/vendor.qti.esepowermanager@1.0.so
+odm/lib64/vendor.qti.esepowermanager@1.1.so
 
 # SecureMSM
 vendor/bin/hdcp1prov
@@ -1083,7 +1090,7 @@ vendor/lib64/libspl.so
 odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/bin/oplus_sensor_fb
 odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc
-odm/etc/sensor/config/kona_T0_tcs3408.json
+odm/etc/sensor/config/kona_bu52053nvx_0.json
 odm/etc/sensor/config/kona_qrd_ak991x_0.json
 odm/etc/sensor/config/kona_qrd_bmi26x_0.json
 odm/etc/sensor/config/kona_qrd_cct.json
@@ -1093,12 +1100,13 @@ odm/etc/sensor/config/kona_qrd_lsm6dsm_0.json
 odm/etc/sensor/config/kona_qrd_lsm6dso.json
 odm/etc/sensor/config/kona_qrd_mmc5603x_0.json
 odm/etc/sensor/config/kona_qrd_stk2232_0.json
-odm/etc/sensor/config/kona_qrd_sx9324_0.json
-odm/etc/sensor/config/kona_qrd_sx9324up_0.json
 odm/etc/sensor/config/kona_qrd_sx933x_0.json
 odm/etc/sensor/config/kona_qrd_tcs3408.json
 odm/etc/sensor/config/kona_qrd_tcs3707.json
 odm/etc/sensor/config/kona_stk3a6x_0.json
+odm/etc/sensor/config/kona_sx9324_0.json
+odm/etc/sensor/config/kona_sx9324up_0.json
+odm/etc/sensor/config/kona_T0_tcs3408.json
 -odm/etc/vintf/manifest/manifest_oplusSensor.xml
 odm/lib64/liboplus_service.so
 odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so
@@ -2259,7 +2267,6 @@ odm/firmware/wentai24k_rtp.bin
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/init/vppservice.rc
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
