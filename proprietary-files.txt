@@ -782,23 +782,6 @@ my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/e
 my_product/priv-app/HotwordEnrollmentOKGoogle.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogle.apk
 my_product/priv-app/HotwordEnrollmentXGoogle.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogle.apk
 
-# IFAA - from OOS 11.2.8.8
-system_ext/priv-app/IFAAService/IFAAService.apk
-vendor/bin/hw/vendor.oneplus.hardware.ifaa@2.0-service
-vendor/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc
-vendor/lib64/vendor.oneplus.hardware.ifaa@2.0.so
-
-# IFAA firmware - OOS
-odm/vendor/firmware/alipay.b00:system/etc/firmware/alipay.b00
-odm/vendor/firmware/alipay.b01:system/etc/firmware/alipay.b01
-odm/vendor/firmware/alipay.b02:system/etc/firmware/alipay.b02
-odm/vendor/firmware/alipay.b03:system/etc/firmware/alipay.b03
-odm/vendor/firmware/alipay.b04:system/etc/firmware/alipay.b04
-odm/vendor/firmware/alipay.b05:system/etc/firmware/alipay.b05
-odm/vendor/firmware/alipay.b06:system/etc/firmware/alipay.b06
-odm/vendor/firmware/alipay.b07:system/etc/firmware/alipay.b07
-odm/vendor/firmware/alipay.mdt:system/etc/firmware/alipay.mdt
-
 # IMS
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
