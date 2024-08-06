@@ -1,0 +1,5 @@
+# Osense
+vendor.oplus.hardware.osense.client.IOsenseAidlHalReporter/default    u:object_r:fwk_osense_aidl_service:s0
+
+# Performance
+vendor.oplus.hardware.performance.IPerformance/default                u:object_r:hal_oplus_performance_aidl_service:s0

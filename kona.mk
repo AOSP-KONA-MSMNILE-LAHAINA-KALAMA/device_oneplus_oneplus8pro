@@ -201,6 +201,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wfd \
     wlan
 
+TARGET_USE_AIDL_QTI_BT_AUDIO := true
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
